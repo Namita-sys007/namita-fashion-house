@@ -1,106 +1,94 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Namita Fashion House</title>
 
 <style>
-body{
-font-family: Arial;
-text-align:center;
-background:#f5f5f5;
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #f5f5f5;
+    margin: 0;
+    padding: 0;
 }
 
-.product{
-background:white;
-padding:20px;
-margin:40px;
-border-radius:10px;
-box-shadow:0 0 10px gray;
+h1, h2, h3 {
+    color: #333;
 }
 
-img{
-width:300px;
-border-radius:10px;
+.product, form, .payment {
+    background: white;
+    padding: 20px;
+    margin: 40px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+    max-width: 500px;
 }
 
-form{
-background:white;
-padding:20px;
-margin:40px;
-border-radius:10px;
-box-shadow:0 0 10px gray;
+img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
 }
 
-input, textarea{
-width:80%;
-padding:10px;
-margin:10px;
+input, textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
 }
 
-button{
-background:green;
-color:white;
-padding:10px 20px;
-border:none;
-border-radius:5px;
-font-size:16px;
-cursor:pointer;
+button {
+    background: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
 }
 
-.payment{
-background:white;
-margin:40px;
-padding:20px;
-border-radius:10px;
-box-shadow:0 0 10px gray;
+button:hover {
+    background: darkgreen;
+}
+
+.payment p {
+    text-align: left;
+    margin: 10px 0;
 }
 </style>
 
 </head>
-
 <body>
 
 <h1>Namita Fashion House</h1>
 
 <div class="product">
-
-<h2>Sparkling Orchid Designer Gown</h2>
-
-<img src="images/Sparkling Orchid Designer Gown.png">
-
-<h3>Price: ₹3000</h3>
-
+    <h2>Sparkling Orchid Designer Gown</h2>
+    <img src="images/Sparkling-Orchid-Designer-Gown.png" alt="Sparkling Orchid Designer Gown">
+    <h3>Price: ₹3000</h3>
 </div>
 
 <h2>Place Your Order</h2>
 
-<!-- Formspree form action link yahan laga hai -->
 <form action="https://formspree.io/f/mnjgngda" method="POST">
-
-<input type="text" name="name" placeholder="Your Name" required><br>
-
-<input type="tel" name="phone" placeholder="Phone Number" required><br>
-
-<input type="text" name="city" placeholder="City" required><br>
-
-<textarea name="address" placeholder="Full Address" required></textarea><br>
-
-<button type="submit">Order Now</button>
-
+    <input type="text" name="name" placeholder="Your Name" required><br>
+    <input type="tel" name="phone" placeholder="Phone Number" required><br>
+    <input type="text" name="city" placeholder="City" required><br>
+    <textarea name="address" placeholder="Full Address" required></textarea><br>
+    <button type="submit">Order Now</button>
 </form>
 
 <div class="payment">
-
-<h2>Payment Method</h2>
-
-<p><b>Cash on Delivery:</b> Cash on Delivery is available only in Prayagraj.</p>
-
-<p><b>Online Payment:</b> For orders outside Prayagraj, full payment must be made in advance through online payment.</p>
-
-<p><b>Delivery Charges:</b> ₹100 delivery charges will be applied for orders outside Prayagraj.</p>
-
+    <h2>Payment Method</h2>
+    <p><b>Cash on Delivery:</b> Available only in Prayagraj.</p>
+    <p><b>Online Payment:</b> For orders outside Prayagraj, full payment must be made in advance.</p>
+    <p><b>Delivery Charges:</b> ₹100 for orders outside Prayagraj.</p>
 </div>
 
 </body>
 </html>
-
